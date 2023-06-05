@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="covid.css">
+    <title>Covid Tracker</title>
+</head>
+<body>
+    <h1>Covid Tracker</h1>
+    <section>
+        <div class="search">
+            <input type="text" id="countryName" placeholder="Country to search for" name="countryName">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="result">
+            <div id="first">
+                <label>Country</label>
+                <h2></h2>
+                <label>Code</label>
+                <h4></h4>
+                <label>last Upadted</label>
+                <h6></h6>
+            </div>
+            <div id="information">
+                <table>
+                    <tr>
+                        <td>Total Confirmed :</td>
+                        <td class="totalConfirmed"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Death :</td>
+                        <td class="totalDeath"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Recovered :</td>
+                        <td class="totalRecovered"></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <button type="reset" class="clear">Clear</button>
+    </section>
+
+    <script src="covid.js"></script>
+</body>
+</html>

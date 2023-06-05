@@ -1,0 +1,108 @@
+body{
+    background-color: #80DEEA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(121deg,yellow 50% , rgb(17 1 255) 50%);
+}
+section {
+    display: flex;  
+    flex-direction: column;
+    border:2px solid white;
+    width: 70%;    
+    margin: 0 auto;
+    background-image: linear-gradient(to right ,yellow 50% , yellow 50%);
+    box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+div.search{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    border: none;
+    font-size: larger;
+
+}
+button{
+    padding:10px;
+    color:white;
+    font-weight: 900;
+    font-size: larger;
+    background-color: rgb(17 1 255);
+    border-radius: 10px;
+    border:1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input::after{
+    content: "";
+    background-image: url("https://www.google.com/search?q=search+icon+png&rlz=1C1GCEB_enIN914IN914&tbm=isch&source=iu&ictx=1&fir=QUlwsOZhrmp48M%252CTuMWPv4AyGZvuM%252C_&vet=1&usg=AI4_-kS7tLBUA7f8o0r1iIEkxfm9vu0mXQ&sa=X&ved=2ahUKEwiF_qq7kd3vAhUPfSsKHUjeCGEQ9QF6BAgQEAE#imgrc=QUlwsOZhrmp48M");
+}
+input:focus{
+    outline: none;
+    border: none;
+
+}
+h2,h3,h4{
+    border-bottom: 2px solid rgb(17 1 255) ;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end ;
+    align-items: flex-start;
+    flex-grow: 1 ;
+    padding: 40px;
+    
+}
+#information{
+    border-left: 1px solid white;
+}
+#first,#information{
+    flex-grow: 1;
+    
+}
+#information , body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+td{
+  padding:20px; 
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+td:nth-child(2){
+    font-size: larger;
+    font-weight: bold;
+    color:red;
+    border-bottom: 1px solid rgb(17 1 255);
+}
+
+@media screen and (max-width:768px) {
+    div.result{
+        flex-direction: column;
+    }
+    td{
+       display: block;
+    }
+    tr,td{
+        padding-right: 0;
+        padding-left:0;
+    }
+    div.search{
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+    }
+    input{
+        width: inherit;
+    }
+}
