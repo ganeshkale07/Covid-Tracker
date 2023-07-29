@@ -1,0 +1,8 @@
+\runsubsection{Covid Tracker}
+    \descript{Javascript, HTML , CSS}
+\begin{tightemize}
+\item Small project to get Covid cases information based on country code or name
+\item Fetched information from open source API and showcased on UI
+\item Learnings - How backend and frontend interact and share data with each other
+\end{tightemize}
+\sectionsep
